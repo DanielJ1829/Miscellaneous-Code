@@ -17,11 +17,6 @@ the user defined bound. The plot also computes the average prime spacing in the 
 8) (Possibly) return prime prime triplets upon user request
 9) Provide prime factorisations of large numbers based on user input -> can extend this a lot into how many prime factorisations each number needs,
 could look really cool once you reach large numbers
-10) Extend the project so that it can do much more in terms of number theory; this could be various things that are computationally complicated
-this could be calculating things, working out what the day will be in x minutes/months and so on, just yeah, make this the place for various ideas
-so that a lot of computationally complex stuff can be put here (ideas here: a) factorials and extended choose functions/combinatorics, b)
-11) Have a navigatable user input interface that guides you through what the code does, and lets you choose whether you want
-prime visualisation, prime factoring and other features
 '''
 
 
@@ -362,24 +357,3 @@ if plot_result == 'yes':
             ax.legend(loc='upper left', fontsize=20)
         plt.title('Prime Pair Frequency Along the Number Line')
         plt.show()
-
-
-'''def info():    fix this when you want to come back to this
-    while True:
-        y = input("Welcome to my prime number code! The code can perform 8 tasks based on user input"
-        "1: Generate a list of primes, 2: Display the number of primes and the time taken,"
-        " 3: Produce the prime list, 4: Plot a graph of this, 5: Generate arrays of prime pairs, "
-        "6: Display these in the terminal, 7: Plot a graph comparing your chosen prime pair arrays,"
-        "8: Find the prime factors of a number of your choice. Please enter 1 to generate the prime list,"
-        "then any combination of numbers from 2 to 8 to perform the remaining tasks. Please note: a) forgetting 1 will"
-                  " make the code"
-        " generate an array of primes up to 10000. b) both 3, 4 and 7 require 2 to be entered as well for the code to run."
-        " c) 7 requires 5 to be entered. Enjoy the code! Enter your string of numbers from 1-8 here: ").strip().lower()
-        if y == 'yes':
-            break
-        elif y == 'no':
-            break
-        else:
-            print("Invalid input. Please enter 'yes' or 'no'.")
-    return y
-'''
