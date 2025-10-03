@@ -174,12 +174,11 @@ def produce_desired_gap_array(gap):
     return desired_gap
 #next few problems: trying to output multiple of these gaps. converting the pairs into something i can plot
 # the multiple gaps problem is hard. Upon user request, we want to get multiple of these arrays
-#i've got the gaps bit right. I just need to now work out the next part
-#I need to ask the user: Do you want: twins, cousins, sexies, then: do you want a user defined gap, then reask this 5
-#times over, allowing the user to exit at any given opportunity. Then, I need to find a way of subplotting these graphs.
+#got the gaps bit right,just need to now work out the next part
+#I need to ask the user: Do you want: twins, cousins, sexies, then: do you want a user defined gap, then re-ask this 5
+#times over, allowing the user to exit at any given opportunity. Then, i need to find a way of subplotting these graphs.
 #I will remove the user's option to choose which ones they plot. Either they can have nothing, arrays of each one,
 #the plots or both.
-#I could also try and save the pairs of primes as a csv file.
 def first_gaps_request():
     prime_gaps = ['Twin Primes', 'Cousin Primes', 'Sexy Primes']
     first_gaps = [None, None, None]
@@ -248,7 +247,7 @@ def get_custom_arrays(further_gaps):
     time_j = time.time()
     print('the time taken was {}'.format(time_j - time_i))
     return further_arrays
-#can use get_graph() or info (they do the same thing lmao) to now plot these graphs. The main issue is not this tho.
+#can use get_graph() or info (they do the same thing) to now plot these graphs. The main issue is not this tho.
 #def array_average():
 def compute_mean(array):
     x = []
@@ -357,3 +356,4 @@ if plot_result == 'yes':
             ax.legend(loc='upper left', fontsize=20)
         plt.title('Prime Pair Frequency Along the Number Line')
         plt.show()
+
